@@ -117,6 +117,7 @@
     z-index: 1;
     color: #ffffff;
     text-align: center;
+    margin-top: 60px;
 }
 .bg-hero-section .text-box h1{
     font-size: 50px;
@@ -288,7 +289,7 @@
     font-size: 20px;
 }
 .slider-section {
-    height: 70vh;
+    height: 80vh;
     
 }
 .slider-container{
@@ -323,7 +324,7 @@
     background-color: #ffffff;
     padding: 20px 0px;
     margin-left: -20px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     position: relative;
 }
 .right-side .top-heading h2 {
@@ -361,7 +362,7 @@ button.owl-prev i, button.owl-next i{
     background-color: #39495d;
     color: white;
     font-size: 20px;
-    padding: 15px;
+    padding: 10px;
     border-radius: 50%;
 }
 button.owl-prev{
@@ -371,6 +372,7 @@ button.owl-prev{
 button.owl-next{
     right: -10px;
     transform: rotate(-90deg);
+    top: 30px;
 }
 .slide-box{
     padding: 20px 40px;
@@ -432,8 +434,24 @@ button.owl-next{
 .menubar-box.active-toggle {
     left: 0;
 }
+.toggle-bar{
+    display: none;
+}
+
+.toggle-bar span {
+    display: block;
+    width: 27px;
+    height: 3px;
+    background: var(--black);
+    margin-bottom: 4px;
+    border-radius: 10px;
+    background-color: white;
+}
 
   @media(max-width:767px){
+    .toggle-bar{
+        display: flex;
+    }
     .bg-hero-section .text-box h1 {
         font-size: 24px;
         line-height: 35px;
@@ -489,7 +507,7 @@ button.owl-next{
     .benifit-box .benifit-card p:first-child {
 
         font-size: 24px;
-        line-height: 40px;
+        line-height: 27px;
     }
     .benifit-container .benifit-box .benifit-card p:last-child {
         /* margin-top: 16px; */
@@ -517,6 +535,7 @@ button.owl-next{
     .right-side .child-slider-box {
         width: 90%;
         margin: auto;
+        height: auto;
     }
     button.owl-prev {
         left: 20px;
@@ -525,13 +544,19 @@ button.owl-next{
     button.owl-next {
         right: 21px;
         transform: rotate(-90deg);
-        top: 26px;
+        top: 17px;
     }
     .top-head header {
-        justify-content: center;
+        justify-content: space-between;
     }
     .top-head{
         padding: 15px;
+    }
+    .logo-box {
+        width: 200px;
+    }
+    .logo-box img{
+        width: 100%;
     }
     .menubar-box {
         position: absolute;
@@ -571,15 +596,7 @@ button.owl-next{
     .menubar-box ul li a{
         color: #d14c15;
     }
-    .toggle-bar span {
-        display: block;
-        width: 27px;
-        height: 3px;
-        background: var(--black);
-        margin-bottom: 4px;
-        border-radius: 10px;
-        background-color: white;
-    }
+    
     .button-box {
         padding-left: 15px;
     }
